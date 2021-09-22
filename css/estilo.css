@@ -1,0 +1,56 @@
+*{margin:0;
+    padding:0}
+#logo{
+    width:22px;
+    height:22px;
+  }
+  .logo{
+    display:inline-block;
+    margin-right:1em;
+    display:flex;
+    align-items: center;
+  }
+  .logo > div > svg{
+    vertical-align:top;
+    height:22px;
+    padding:1em;
+    box-sizing: content-box;
+  }
+  .navbar1{
+    background:#023859;
+    position:fixed;
+    top:0;
+    width:100%;
+  }
+  .container1{
+    background:red;
+    width:90%;
+    max-width:1000px;
+    margin:auto;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    align-items: center;
+  }
+  .botones {
+    list-style:none;
+  }
+  .botones li{
+    display:inline-block;
+  }
+  .botones li a{
+    color:#fff;
+    text-decoration:none;
+    display: inline-block;
+    padding:1em;
+  }
+  .logo2{
+    display: flex;
+    align-items: center;
+  }
+  .logo2 > div > svg{
+    vertical-align:top;
+    height:22px;
+    padding:1em;
+    box-sizing: content-box;
+  }

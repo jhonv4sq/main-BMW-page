@@ -1,0 +1,322 @@
+*{margin:0;
+padding:0
+}
+
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+.headroom{
+    transition: background .3s ease !important;
+}
+.navbar0{
+    position: fixed;
+    display: flex;
+    align-items: center;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    width: 100%;
+    top: 0;
+    z-index: 100;  
+}
+.navbar0.headroom--pinned.headroom--top{
+    background: none;
+    border-bottom:none;
+    box-shadow:none
+}
+.navbar0.headroom--top.headroom--not-bottom{
+    background: none;
+    border-bottom:none;
+    box-shadow:none
+}
+.container0{
+    
+    width: 100%;
+    max-width: 1140px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    display: flex !important;
+    flex-basis: auto;
+    flex-grow: 1; 
+}
+.container0 > a{
+    text-decoration:none;
+    color: #666;
+}
+/* .content-logo{
+    width:53px;
+    height:53px;
+} */
+#logo{
+    width:48px;
+    height:48px;
+    background-size: cover;
+	background-repeat: no-repeat;
+  }
+
+.headroom--pinned.headroom--top #logo{
+    background-image: url('../svg/BMW_White_Logo.svg');
+}
+
+.headroom--top.headroom--not-bottom #logo{
+    background-image: url('../svg/BMW_White_Logo.svg');
+}
+
+.headroom--not-top.headroom--not-bottom #logo{
+    background-image: url('../svg/BMW_Grey_Logo.svg');
+}
+.headroom--pinned #logo{
+    background-image: url('../svg/BMW_Grey_Logo.svg');
+}
+
+.headroom--unpinned #logo{
+    background-image: url('../svg/BMW_Grey_Logo.svg');
+} 
+
+.logo0{
+    display:inline-block;
+    margin-right:1em;
+    display:flex;
+    align-items: center;
+}
+.logo0 > div > img{
+    vertical-align:top;
+    height:22px;
+    padding:1em;
+    box-sizing: content-box;
+}
+
+.logo0 > span{
+    display: inline-block;
+    padding-top: 0.3125rem;
+    padding-bottom: 0.3125rem;
+    margin-right: 1rem;
+    font-size: 1.25rem;
+    line-height: inherit;
+    white-space: nowrap;
+    font-family: bmwTypeWebBoldAll,Arial,Helvetica,sans-serif;
+    font-weight: 550;
+}
+.headroom--pinned.headroom--top .logo0 > span{
+    color: #ffffff;
+}
+.headroom--top.headroom--not-bottom .logo0 > span{
+    color: #ffffff;
+}
+
+.botones{
+    display: flex;  
+    flex-direction: row;
+    list-style:none;
+    padding-left: 0;
+}
+.botones > li{
+    display:inline-block;
+}
+.botones > li > a{
+    display: block;
+    text-decoration: none;
+    padding-top: 1.9em;
+    padding-right: 1.2em;
+    padding-bottom: 1.7em;
+    padding-left: 1.2em;
+    margin: 0;
+    border-width: 0;
+    border-style: solid;
+    border-color: transparent;
+    border-bottom-width: 4px;
+}
+.headroom--pinned.headroom--top .botones > li > a{
+    color: #ffffff;
+}
+.headroom--pinned.headroom--top .botones > li > a:hover{
+    color: #ffffff;
+}
+.headroom--top.headroom--not-bottom .botones > li > a{
+    color: #ffffff;
+}
+.headroom--top.headroom--not-bottom .botones > li > a:hover{
+    color: #ffffff;
+}
+.headroom--unpinned .botones > li > a{
+    color:#666666;
+}
+.headroom--pinned .botones > li > a{
+    color:#666666;
+}
+.headroom--not-bottom .botones > li > a{
+    color:#666666;
+}
+.botones > li > a:hover{
+    border-bottom: 4px solid;
+    border-color: #1c69d4;
+}
+.headroom--unpinned .botones > li > a:hover{
+    color: #262626;
+}
+.headroom--pinned .botones > li > a:hover{
+    color: #262626;
+}
+.headroom--not-top.headroom--not-bottom .botones > li > a:hover{
+    color: #262626;
+}
+.botones > li > a > i {
+    font-size: 17px;
+}
+.borde{
+    width: 100%;
+    max-width: 1140px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    display: flex !important;
+    flex-basis: auto;
+    flex-grow: 1;
+}
+.borde > a{
+    text-decoration:none;
+    color: #666;  
+}
+.headroom--pinned.headroom--top .borde{
+    border-bottom: 1px solid transparent;
+    border-bottom-color: rgba(255,255,255,.4);
+    
+}
+.headroom--top.headroom--not-bottom .borde{
+    border-bottom: 1px solid transparent;
+    border-bottom-color: rgba(255,255,255,.4);
+    
+}
+
+.headroom--unpinned{
+    background: #ffffff;
+    color:#666666;
+    box-shadow:0 3px 6px 0 rgb(0 0 0 / 16%), 0 3px 6px 0 rgb(0 0 0 / 23%);
+
+}
+.headroom--pinned{
+    background: #ffffff;
+    color:#666666;
+    box-shadow:0 3px 6px 0 rgb(0 0 0 / 16%), 0 3px 6px 0 rgb(0 0 0 / 23%);
+
+}
+.headroom--not-bottom{
+    background: #ffffff;
+    color:#666666;
+    box-shadow:0 3px 6px 0 rgb(0 0 0 / 16%), 0 3px 6px 0 rgb(0 0 0 / 23%);
+}
+.headroom{
+    transition: transform .3s ease;
+}
+@media screen and (max-width:665px){
+    .container0{
+        width: 100%;
+        max-width: 1140px;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+    #logo{
+        width:40px;
+        height:40px;
+    }
+    .borde{
+        padding-left: 10px;
+    }
+    .logo0{
+        margin-right:0em;
+    }
+    .logo0 > div > img{
+        height:22px;
+        padding:1em;
+    }
+    .botones > li > a{
+        padding-top: 1.9em;
+        padding-right: 0.8em;
+        padding-bottom: 1.7em;
+        padding-left: 0.8em;
+        margin: 0;
+    }
+    .logo0 > span{
+        display: inline-block;
+        padding-top: 0.3125rem;
+        padding-bottom: 0.3125rem;
+        margin-right: 0rem;
+        font-size: 0.97rem;
+        font-weight: 550;
+    }
+}
+@media screen and (max-width:489px){
+    .botones  li  a{
+        padding-right: 0.4em ;
+        padding-left: 0.4em ;
+    }
+    .logo0  span{
+        margin-right: 2px ;
+    }
+}
+@media screen and (max-width:461px){
+    .container0{
+        width: 100%;
+        max-width: 1140px;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+    #logo{
+        width:30px;
+        height:30px;
+      }
+    .logo0{
+        margin-right:0em;
+    }
+    .logo0 > div > img{
+        height:22px;
+        padding:1em;
+    }
+    .botones > li > a{
+        padding-top: 0.96em;
+        padding-right: 0.2em;
+        padding-bottom: 0.99em;
+        padding-left: 0.2em;
+        margin: 0;
+    }
+    .logo0 > span{
+        display: inline-block;
+        padding-top: 0.3125rem;
+        padding-bottom: 0.3125rem;
+        margin-right: 1rem;
+        font-size: 0.7rem;
+        font-weight: 500;
+    }
+}
+@media screen and (max-width:321px){
+    .botones  li  a{
+        padding-right: 0.1em ;
+        padding-left: 0.1em ;
+    }
+    .logo0  span{
+        margin-right: 2px ;
+    }
+}
+@media screen and (max-width:281px){
+    #logo{
+        width:30px;
+        height:30px;
+    }
+    .logo0 > span{
+        display: inline-block;
+        padding-top: 0.3125rem;
+        padding-bottom: 0.3125rem;
+        margin-right: 1rem;
+        font-size: 0.7rem;
+        font-weight: 500;
+    }
+
+}
+
